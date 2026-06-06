@@ -14,12 +14,14 @@ Instead of sending a truck roll just to learn where a meter box is, whether a ro
 
 <table>
   <tr>
-    <td><img src="MCP-Server-and-Assets/screenshots/02-intro.png" alt="FieldMate intro screen showing three capture sections" width="260"></td>
-    <td><img src="MCP-Server-and-Assets/screenshots/03-meter-section1.png" alt="FieldMate power meter capture screen" width="260"></td>
+    <td><img src="MCP-Server-and-Assets/mockup-examples/00-instagram-ad.png" alt="Instagram ad inviting smartphone owners to get energy credits" width="180"></td>
+    <td><img src="MCP-Server-and-Assets/screenshots/02-intro.png" alt="FieldMate intro screen showing three capture sections" width="180"></td>
+    <td><img src="MCP-Server-and-Assets/screenshots/03-meter-section1.png" alt="FieldMate power meter capture screen" width="180"></td>
   </tr>
   <tr>
-    <td><img src="MCP-Server-and-Assets/screenshots/04-roof-blur-error.png" alt="FieldMate blurry roof photo validation screen" width="260"></td>
-    <td><img src="MCP-Server-and-Assets/screenshots/05-roof-outline-error.png" alt="FieldMate incomplete roof outline validation screen" width="260"></td>
+    <td><img src="MCP-Server-and-Assets/screenshots/04-roof-blur-error.png" alt="FieldMate blurry roof photo validation screen" width="180"></td>
+    <td><img src="MCP-Server-and-Assets/screenshots/05-roof-outline-error.png" alt="FieldMate incomplete roof outline validation screen" width="180"></td>
+    <td><img src="MCP-Server-and-Assets/screenshots/06-calculating.png" alt="FieldMate calculating rewards screen" width="180"></td>
   </tr>
 </table>
 
@@ -111,6 +113,7 @@ Prototype artifacts are organized in [`MCP-Server-and-Assets/`](MCP-Server-and-A
 
 - [`server-source/`](MCP-Server-and-Assets/server-source/) contains the compressed MCP server and React source bundle.
 - [`single-file-app/`](MCP-Server-and-Assets/single-file-app/) contains the renderable `mcp-app.html` resource.
+- [`mockup-examples/`](MCP-Server-and-Assets/mockup-examples/) contains the Instagram acquisition ad.
 - [`screenshots/`](MCP-Server-and-Assets/screenshots/) contains the seven-step participant flow screenshots.
 
 ## Capture Flow
@@ -212,6 +215,7 @@ These files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into [`MCP-S
 - `server-source/fieldmate-mcp-app.tar.gz`
 - `single-file-app/mcp-app.html`
 - `single-file-app/mcp-app.html.gz`
+- `mockup-examples/00-instagram-ad.png`
 - `screenshots/01-demographics.png`
 - `screenshots/02-intro.png`
 - `screenshots/03-meter-section1.png`

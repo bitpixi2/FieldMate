@@ -16,8 +16,12 @@ This folder contains the MCP app artifacts copied from `https://fieldmate-mcp-ap
 - `screenshots/`  
   Seven screenshots showing the FieldMate participant flow from demographics through reward redemption.
 
+- `mockup-examples/00-instagram-ad.png`
+  Instagram-style acquisition ad that shows how a participant might first discover FieldMate.
+
 ## Screenshot Guide
 
+- `mockup-examples/00-instagram-ad.png` - participant acquisition ad.
 - `01-demographics.png` - demographic details with browser autocomplete.
 - `02-intro.png` - three-section plan and time estimate.
 - `03-meter-section1.png` - power meter capture step.
