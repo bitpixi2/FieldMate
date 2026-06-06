@@ -19,9 +19,13 @@ This folder contains the MCP app artifacts copied from `https://fieldmate-mcp-ap
 - `mockup-examples/00-instagram-ad.png`
   Instagram-style acquisition ad that shows how a participant might first discover FieldMate.
 
+- `pitch-assets/close-data-gaps.png`
+  Pitch slide explaining the gap between existing energy data sources and the household-level details FieldMate captures.
+
 ## Screenshot Guide
 
 - `mockup-examples/00-instagram-ad.png` - participant acquisition ad.
+- `pitch-assets/close-data-gaps.png` - pitch slide for the data gap opportunity.
 - `01-demographics.png` - demographic details with browser autocomplete.
 - `02-intro.png` - three-section plan and time estimate.
 - `03-meter-section1.png` - power meter capture step.
