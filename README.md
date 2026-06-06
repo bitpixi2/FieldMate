@@ -4,6 +4,25 @@ FieldMate is a ChatGPT-guided capture workflow that pays households energy credi
 
 Instead of sending a truck roll just to learn where a meter box is, whether a roof photo is usable, or how a service pole is obstructed, FieldMate turns a smartphone owner into a guided field observer. The participant completes three short capture sections, receives an immediate reward estimate, and creates a structured data sample that can help solar installers, EV charger installers, retailers, field technicians, networks, and government resilience teams plan work faster.
 
+## Try The Demo
+
+[**TRY THE DEMO**](https://fieldmate-mcp-app.b-cdn.net/mcp-app.html)
+
+*FieldMate mockup, integrated into Amber Electric*
+
+## Prototype Preview
+
+<table>
+  <tr>
+    <td><img src="MCP-Server-and-Assets/screenshots/02-intro.png" alt="FieldMate intro screen showing three capture sections" width="260"></td>
+    <td><img src="MCP-Server-and-Assets/screenshots/03-meter-section1.png" alt="FieldMate power meter capture screen" width="260"></td>
+  </tr>
+  <tr>
+    <td><img src="MCP-Server-and-Assets/screenshots/04-roof-blur-error.png" alt="FieldMate blurry roof photo validation screen" width="260"></td>
+    <td><img src="MCP-Server-and-Assets/screenshots/05-roof-outline-error.png" alt="FieldMate incomplete roof outline validation screen" width="260"></td>
+  </tr>
+</table>
+
 ## The Problem
 
 The energy transition depends on local, physical details that are still missing from digital systems:
@@ -51,6 +70,12 @@ Participants receive energy credits for approved submissions. Buyers pay for the
 ## Technical Architecture
 
 The copied artifact contains a React MCP app packaged as a single HTML resource. The MCP server registers a tool with linked UI metadata, then serves the FieldMate capture UI to the host. The current prototype demonstrates the interaction model; future production work would replace the demo `get-time` tool with capture submission, validation, buyer export, and reward redemption tools.
+
+Prototype artifacts are organized in [`MCP-Server-and-Assets/`](MCP-Server-and-Assets/):
+
+- [`server-source/`](MCP-Server-and-Assets/server-source/) contains the compressed MCP server and React source bundle.
+- [`single-file-app/`](MCP-Server-and-Assets/single-file-app/) contains the renderable `mcp-app.html` resource.
+- [`screenshots/`](MCP-Server-and-Assets/screenshots/) contains the seven-step participant flow screenshots.
 
 ## Capture Flow
 
@@ -102,7 +127,7 @@ flowchart TD
 
 ## MCP Server Flow
 
-This is the MCP app/server structure copied into `downloads/fieldmate-mcp-app.tar.gz`. The bundled server is based on the `@modelcontextprotocol/server-basic-react` example and serves the FieldMate React capture UI as a single MCP app resource.
+This is the MCP app/server structure copied into `MCP-Server-and-Assets/server-source/fieldmate-mcp-app.tar.gz`. The bundled server is based on the `@modelcontextprotocol/server-basic-react` example and serves the FieldMate React capture UI as a single MCP app resource.
 
 ```mermaid
 flowchart TD
@@ -144,13 +169,13 @@ flowchart TD
 - Add network and installer dashboards for filtering verified submissions by geography, asset type, urgency, and recency.
 - Add disaster-response campaigns that request new samples only where conditions have changed.
 
-## Copied CDN Downloads
+## MCP Server and Assets
 
-These files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into `downloads/`:
+These files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into [`MCP-Server-and-Assets/`](MCP-Server-and-Assets/) and organized by purpose:
 
-- `fieldmate-mcp-app.tar.gz`
-- `mcp-app.html`
-- `mcp-app.html.gz`
+- `server-source/fieldmate-mcp-app.tar.gz`
+- `single-file-app/mcp-app.html`
+- `single-file-app/mcp-app.html.gz`
 - `screenshots/01-demographics.png`
 - `screenshots/02-intro.png`
 - `screenshots/03-meter-section1.png`
@@ -158,3 +183,9 @@ These files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into `downlo
 - `screenshots/05-roof-outline-error.png`
 - `screenshots/06-calculating.png`
 - `screenshots/07-reward-82-redeem.png`
+
+## Team
+
+<img src="team/fieldmate-team.jpeg" alt="FieldMate team photo" width="720">
+
+**Team FieldMate:** Jasper Fyfv, Ishaan Kataria, and Kasey Robinson.
