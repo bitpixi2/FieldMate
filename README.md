@@ -1,8 +1,56 @@
 # FieldMate
 
-FieldMate guides smart phone owners through a ChatGPT-assisted capture flow for timely site information that existing APIs, smart meters, and Google Maps do not reliably capture.
+FieldMate is a ChatGPT-guided capture workflow that pays households energy credits for safe, useful site data that APIs, smart meters, and satellite imagery do not reliably capture.
 
-FieldMate sells safe, useful submissions to roof solar panel companies, EV installers, electricity sellers, field technicians, and government teams. Participants can earn energy credits for approved submissions.
+Instead of sending a truck roll just to learn where a meter box is, whether a roof photo is usable, or how a service pole is obstructed, FieldMate turns a smartphone owner into a guided field observer. The participant completes three short capture sections, receives an immediate reward estimate, and creates a structured data sample that can help solar installers, EV charger installers, retailers, field technicians, networks, and government resilience teams plan work faster.
+
+## The Problem
+
+The energy transition depends on local, physical details that are still missing from digital systems:
+
+- Smart meters know usage, not whether the meter box is accessible, damaged, blocked, or safe to inspect.
+- Google Maps and aerial imagery miss recent roof changes, shading, access constraints, storm damage, and meter/pole conditions.
+- Installers and network teams often discover basic site constraints only after scheduling a visit.
+- Households are asked to participate in electrification, but rarely get paid for the useful data they can safely provide.
+
+FieldMate closes that gap with guided, validated, participant-owned capture.
+
+## Solution
+
+FieldMate asks for a small set of high-value observations:
+
+- **Meter Box:** Exterior video or photos of the meter box location, access path, obstructions, and visible condition.
+- **Roof Setup:** Ground-level roof photos and roof-edge outlines to support solar, battery, insulation, and electrification planning.
+- **Power Pole:** Two safe-distance pole angles with notes about trees, sagging lines, storm changes, or access constraints.
+
+The workflow is designed for normal phone users. It uses browser autofill when available, avoids forced manual demographic entry, gives concrete examples, validates blurry or incomplete roof submissions, and warns users not to climb onto roofs or approach unsafe infrastructure.
+
+## Why It Wins
+
+| Category | FieldMate case |
+| --- | --- |
+| **Innovation** | Converts household smartphone capture into structured energy-transition data that existing API, meter, and map sources miss. The reward loop turns data collection from an unpaid burden into a household incentive. |
+| **Usefulness** | Serves both sides of the market: households earn energy credits, while installers, networks, retailers, field technicians, and government teams get timely site intelligence before dispatch. |
+| **Viability** | Uses phones, browser autofill, single-file MCP app delivery, and reusable validation flows. It can scale suburb-by-suburb without deploying new hardware. |
+| **Technical Feasibility** | The repo includes a working MCP app artifact, React capture UI, screenshots, and a server flow that can be run over Streamable HTTP or stdio. Future work can add computer-vision scoring, address verification, and buyer APIs. |
+| **Business Readiness** | Clear value proposition: pay households a small reward for data that can reduce failed visits, shorten quoting cycles, improve storm response, and enrich electrification planning. |
+| **Sustainability** | Better pre-site data can reduce unnecessary truck rolls, accelerate solar and EV readiness, and improve infrastructure resilience after extreme weather. |
+
+## Business Model
+
+FieldMate can sell verified capture packages to:
+
+- Solar panel and battery companies assessing roof readiness.
+- EV charger installers checking meter and service conditions.
+- Electricity retailers targeting electrification offers.
+- Distribution networks triaging pole, wire, vegetation, and storm-related risk.
+- Government teams mapping resilience gaps after heatwaves, floods, fires, or storms.
+
+Participants receive energy credits for approved submissions. Buyers pay for the data because it can reduce wasted visits, improve quote accuracy, and speed up deployment decisions.
+
+## Technical Architecture
+
+The copied artifact contains a React MCP app packaged as a single HTML resource. The MCP server registers a tool with linked UI metadata, then serves the FieldMate capture UI to the host. The current prototype demonstrates the interaction model; future production work would replace the demo `get-time` tool with capture submission, validation, buyer export, and reward redemption tools.
 
 ## Capture Flow
 
@@ -52,11 +100,49 @@ flowchart TD
     PoleBrief --> PoleCapture --> PoleNotes --> Rewards --> Wheel --> Amount --> Redeem --> FollowUp --> End
 ```
 
-## Example Sections
+## MCP Server Flow
 
-- **Meter Box:** Capture exterior photos or video of the meter box location, including access points, obstructions, and visible conditions for field crews.
-- **Roof Setup:** Capture ground-level photos of the roof and solar setup, including visible panels, shading issues, and readiness for electrification or battery installation.
-- **Power Pole:** Document the service connection and power pole from a safe distance, including nearby trees, sagging lines, storm-related changes, and access constraints.
+This is the MCP app/server structure copied into `downloads/fieldmate-mcp-app.tar.gz`. The bundled server is based on the `@modelcontextprotocol/server-basic-react` example and serves the FieldMate React capture UI as a single MCP app resource.
+
+```mermaid
+flowchart TD
+    Client["MCP host or ChatGPT client"]
+    Transport{"Transport mode"}
+    HTTP["Streamable HTTP server\nExpress app listens on /mcp"]
+    Stdio["Stdio server\nUsed by local MCP client config"]
+    Factory["createServer()\nCreates a fresh McpServer instance"]
+    Server["McpServer\nBasic MCP App Server (React)"]
+    Tool["registerAppTool: get-time\nReturns current server time"]
+    Meta["_meta.ui.resourceUri\nui://get-time/mcp-app.html"]
+    Resource["registerAppResource\nLoads dist/mcp-app.html"]
+    CSP["Resource metadata\nMCP app MIME type, no border, font CSP"]
+    UI["FieldMate React app\nDemographics, meter, roof, pole, reward"]
+    HostContext["Host context bridge\nsafe-area insets and app callbacks"]
+    Result["Tool result or rendered app response"]
+
+    Client --> Transport
+    Transport -- HTTP POST/GET /mcp --> HTTP
+    Transport -- stdio mode --> Stdio
+    HTTP --> Factory
+    Stdio --> Factory
+    Factory --> Server
+    Server --> Tool
+    Tool --> Meta
+    Meta --> Resource
+    Resource --> CSP
+    Resource --> UI
+    UI --> HostContext
+    Tool --> Result
+    UI --> Result
+```
+
+## Roadmap
+
+- Replace demo `get-time` tool with `submit-capture`, `validate-capture`, `calculate-reward`, and `redeem-credit`.
+- Add computer-vision checks for blur, roof outline completeness, meter visibility, and unsafe pole proximity.
+- Add address-level consent, expiry, and buyer-specific data packages.
+- Add network and installer dashboards for filtering verified submissions by geography, asset type, urgency, and recency.
+- Add disaster-response campaigns that request new samples only where conditions have changed.
 
 ## Copied CDN Downloads
 
