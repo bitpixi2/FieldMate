@@ -67,6 +67,42 @@ FieldMate can sell verified capture packages to:
 
 Participants receive energy credits for approved submissions. Buyers pay for the data because it can reduce wasted visits, improve quote accuracy, and speed up deployment decisions.
 
+## Pitch to Companies
+
+```text
+Solar Company Data Product
+
+FieldMate's sample Mildura report found 1,000 resident-submitted properties,
+with 460 showing strong roof suitability, 390 showing clear meter-box access,
+and 210 ready for immediate solar-plus-battery follow-up.
+
+We recommend prioritising these 210 high-readiness homes first, then
+retargeting the 140 homes needing shade, switchboard, or access review.
+
+Solar companies can buy this data to reduce wasted site visits, avoid weak
+leads, and focus sales teams on homes with clearer installation potential.
+
+Download Example Home Data Report
+Buy Full Mildura Solar Lead Dataset
+```
+
+```text
+Distribution Network Data Product
+
+FieldMate's sample Mildura report found 1,000 resident-submitted properties,
+with 260 showing tree, pole, access, or service-line visibility issues, and
+90 requiring higher-priority field review.
+
+We recommend using these resident-confirmed captures to prioritise inspection
+routes and update asset visibility records.
+
+Distribution networks can buy this data to reduce blind spots, improve crew
+planning, and identify access or safety issues before field workers arrive.
+
+Download Example Property Visibility Report
+Buy Full Grid-Edge Risk Dataset
+```
+
 ## Technical Architecture
 
 The copied artifact contains a React MCP app packaged as a single HTML resource. The MCP server registers a tool with linked UI metadata, then serves the FieldMate capture UI to the host. The current prototype demonstrates the interaction model; future production work would replace the demo `get-time` tool with capture submission, validation, buyer export, and reward redemption tools.
