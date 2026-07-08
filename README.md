@@ -4,6 +4,8 @@ FieldMate is a ChatGPT-guided capture workflow that pays households energy credi
 
 Instead of sending a truck roll just to learn where a meter box is, whether a roof photo is usable, or how a service pole is obstructed, FieldMate turns a smartphone owner into a guided field observer. The participant completes three short capture sections, receives an immediate reward estimate, and creates a structured data sample that can help solar installers, EV charger installers, retailers, field technicians, networks, and government resilience teams plan work faster.
 
+<img src="MCP-Server-and-Assets/pitch-assets/fieldmate-hero.png" alt="FieldMate smartphone energy savings hero image" width="900">
+
 ## Try The Demo
 
 [**TRY THE DEMO**](https://fieldmate-mcp-app.b-cdn.net/mcp-app.html)
@@ -194,6 +196,7 @@ These files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into [`MCP-S
 - `single-file-app/mcp-app.html.gz`
 - `mockup-examples/00-instagram-ad.png`
 - `pitch-assets/close-data-gaps.png`
+- `pitch-assets/fieldmate-hero.png`
 - `pitch-assets/fieldmate-data-examples.png`
 - `pitch-assets/fieldmate-report-example.png`
 - `pitch-assets/solar-company-report.png`

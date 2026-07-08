@@ -22,6 +22,9 @@ This folder contains the MCP app artifacts copied from `https://fieldmate-mcp-ap
 - `pitch-assets/close-data-gaps.png`
   Pitch slide explaining the gap between existing energy data sources and the household-level details FieldMate captures.
 
+- `pitch-assets/fieldmate-hero.png`
+  Hero image showing the FieldMate smartphone energy savings concept.
+
 - `pitch-assets/fieldmate-data-examples.png`
   Visual examples of the meter box, power pole, and roof setup data FieldMate collects.
 
@@ -38,6 +41,7 @@ This folder contains the MCP app artifacts copied from `https://fieldmate-mcp-ap
 
 - `mockup-examples/00-instagram-ad.png` - participant acquisition ad.
 - `pitch-assets/close-data-gaps.png` - pitch slide for the data gap opportunity.
+- `pitch-assets/fieldmate-hero.png` - FieldMate smartphone energy savings hero image.
 - `pitch-assets/fieldmate-data-examples.png` - meter box, power pole, and roof setup examples.
 - `pitch-assets/fieldmate-report-example.png` - combined buyer report mockup.
 - `pitch-assets/solar-company-report.png` - solar company report mockup.
