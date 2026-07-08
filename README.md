@@ -14,18 +14,18 @@ Instead of sending a truck roll just to learn where a meter box is, whether a ro
 
 ## Prototype Preview
 
-<table>
+<table width="100%">
   <tr>
-    <td><img src="MCP-Server-and-Assets/mockup-examples/00-instagram-ad.png" alt="Instagram ad inviting smartphone owners to get energy credits" width="145"></td>
-    <td><img src="MCP-Server-and-Assets/screenshots/01-demographics.png" alt="FieldMate demographic details screen" width="145"></td>
-    <td><img src="MCP-Server-and-Assets/screenshots/02-intro.png" alt="FieldMate intro screen showing three capture sections" width="145"></td>
-    <td><img src="MCP-Server-and-Assets/screenshots/03-meter-section1.png" alt="FieldMate power meter capture screen" width="145"></td>
+    <td width="25%"><img src="MCP-Server-and-Assets/mockup-examples/00-instagram-ad.png" alt="Instagram ad inviting smartphone owners to get energy credits" width="100%"></td>
+    <td width="25%"><img src="MCP-Server-and-Assets/screenshots/01-demographics.png" alt="FieldMate demographic details screen" width="100%"></td>
+    <td width="25%"><img src="MCP-Server-and-Assets/screenshots/02-intro.png" alt="FieldMate intro screen showing three capture sections" width="100%"></td>
+    <td width="25%"><img src="MCP-Server-and-Assets/screenshots/03-meter-section1.png" alt="FieldMate power meter capture screen" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="MCP-Server-and-Assets/screenshots/04-roof-blur-error.png" alt="FieldMate blurry roof photo validation screen" width="145"></td>
-    <td><img src="MCP-Server-and-Assets/screenshots/05-roof-outline-error.png" alt="FieldMate incomplete roof outline validation screen" width="145"></td>
-    <td><img src="MCP-Server-and-Assets/screenshots/06-calculating.png" alt="FieldMate calculating rewards screen" width="145"></td>
-    <td><img src="MCP-Server-and-Assets/screenshots/07-reward-82-redeem.png" alt="FieldMate reward redemption screen" width="145"></td>
+    <td width="25%"><img src="MCP-Server-and-Assets/screenshots/04-roof-blur-error.png" alt="FieldMate blurry roof photo validation screen" width="100%"></td>
+    <td width="25%"><img src="MCP-Server-and-Assets/screenshots/05-roof-outline-error.png" alt="FieldMate incomplete roof outline validation screen" width="100%"></td>
+    <td width="25%"><img src="MCP-Server-and-Assets/screenshots/06-calculating.png" alt="FieldMate calculating rewards screen" width="100%"></td>
+    <td width="25%"><img src="MCP-Server-and-Assets/screenshots/07-reward-82-redeem.png" alt="FieldMate reward redemption screen" width="100%"></td>
   </tr>
 </table>
 
