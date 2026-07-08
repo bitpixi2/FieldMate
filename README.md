@@ -48,6 +48,8 @@ FieldMate asks for a small set of high-value observations:
 
 The workflow is designed for normal phone users. It uses browser autofill when available, avoids forced manual demographic entry, gives concrete examples, validates blurry or incomplete roof submissions, and warns users not to climb onto roofs or approach unsafe infrastructure.
 
+<img src="MCP-Server-and-Assets/pitch-assets/fieldmate-data-examples.png" alt="FieldMate data examples for meter box, power pole, and roof setup" width="900">
+
 ## Why It Wins
 
 | Category | FieldMate case |
@@ -73,48 +75,7 @@ Participants receive energy credits for approved submissions. Buyers pay for the
 
 ## Pitch to Companies
 
-FieldMate turns resident-submitted captures into actionable insight reports that buyers can use immediately. The raw photos, videos, outlines, and notes become scored lead lists, field-review queues, and location-specific datasets that can be sold to solar companies, distribution networks, EV installers, retailers, and government teams.
-
-<table>
-  <tr>
-    <td><img src="MCP-Server-and-Assets/pitch-assets/solar-company-report.png" alt="Solar company data product report example" width="430"></td>
-    <td><img src="MCP-Server-and-Assets/pitch-assets/distribution-network-report.png" alt="Distribution network data product report example" width="430"></td>
-  </tr>
-</table>
-
-```text
-Solar Company Data Product
-
-FieldMate's sample Mildura report found 1,000 resident-submitted properties,
-with 460 showing strong roof suitability, 390 showing clear meter-box access,
-and 210 ready for immediate solar-plus-battery follow-up.
-
-We recommend prioritising these 210 high-readiness homes first, then
-retargeting the 140 homes needing shade, switchboard, or access review.
-
-Solar companies can buy this data to reduce wasted site visits, avoid weak
-leads, and focus sales teams on homes with clearer installation potential.
-
-Download Example Home Data Report
-Buy Full Mildura Solar Lead Dataset
-```
-
-```text
-Distribution Network Data Product
-
-FieldMate's sample Mildura report found 1,000 resident-submitted properties,
-with 260 showing tree, pole, access, or service-line visibility issues, and
-90 requiring higher-priority field review.
-
-We recommend using these resident-confirmed captures to prioritise inspection
-routes and update asset visibility records.
-
-Distribution networks can buy this data to reduce blind spots, improve crew
-planning, and identify access or safety issues before field workers arrive.
-
-Download Example Property Visibility Report
-Buy Full Grid-Edge Risk Dataset
-```
+<img src="MCP-Server-and-Assets/pitch-assets/fieldmate-report-example.png" alt="FieldMate report example for a solar company data product" width="900">
 
 ## Technical Architecture
 
@@ -233,6 +194,8 @@ These files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into [`MCP-S
 - `single-file-app/mcp-app.html.gz`
 - `mockup-examples/00-instagram-ad.png`
 - `pitch-assets/close-data-gaps.png`
+- `pitch-assets/fieldmate-data-examples.png`
+- `pitch-assets/fieldmate-report-example.png`
 - `pitch-assets/solar-company-report.png`
 - `pitch-assets/distribution-network-report.png`
 - `screenshots/01-demographics.png`
