@@ -189,28 +189,10 @@ flowchart TD
 
 ## MCP Server and Assets
 
-These files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into [`MCP-Server-and-Assets/`](MCP-Server-and-Assets/) and organized by purpose:
-
-- `server-source/fieldmate-mcp-app.tar.gz`
-- `single-file-app/mcp-app.html`
-- `single-file-app/mcp-app.html.gz`
-- `mockup-examples/00-instagram-ad.png`
-- `pitch-assets/close-data-gaps.png`
-- `pitch-assets/fieldmate-hero.png`
-- `pitch-assets/fieldmate-data-examples.png`
-- `pitch-assets/fieldmate-report-example.png`
-- `pitch-assets/solar-company-report.png`
-- `pitch-assets/distribution-network-report.png`
-- `screenshots/01-demographics.png`
-- `screenshots/02-intro.png`
-- `screenshots/03-meter-section1.png`
-- `screenshots/04-roof-blur-error.png`
-- `screenshots/05-roof-outline-error.png`
-- `screenshots/06-calculating.png`
-- `screenshots/07-reward-82-redeem.png`
+Files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into [`MCP-Server-and-Assets/`](MCP-Server-and-Assets/) and organized by purpose.
 
 ## Team
 
 <img src="team/fieldmate-team.jpeg" alt="FieldMate team photo" width="720">
 
-**Team FieldMate:** Jasper Fyfv, Ishaan Kataria, and Kasey Robinson.
+**Team FieldMate:** Jasper Fyfe, Ishaan Kataria, and Kasey Robinson.
