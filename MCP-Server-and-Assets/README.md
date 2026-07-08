@@ -22,10 +22,18 @@ This folder contains the MCP app artifacts copied from `https://fieldmate-mcp-ap
 - `pitch-assets/close-data-gaps.png`
   Pitch slide explaining the gap between existing energy data sources and the household-level details FieldMate captures.
 
+- `pitch-assets/solar-company-report.png`
+  Example buyer-facing report for a solar company lead dataset.
+
+- `pitch-assets/distribution-network-report.png`
+  Example buyer-facing report for a grid-edge risk dataset.
+
 ## Screenshot Guide
 
 - `mockup-examples/00-instagram-ad.png` - participant acquisition ad.
 - `pitch-assets/close-data-gaps.png` - pitch slide for the data gap opportunity.
+- `pitch-assets/solar-company-report.png` - solar company report mockup.
+- `pitch-assets/distribution-network-report.png` - distribution network report mockup.
 - `01-demographics.png` - demographic details with browser autocomplete.
 - `02-intro.png` - three-section plan and time estimate.
 - `03-meter-section1.png` - power meter capture step.

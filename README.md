@@ -73,6 +73,15 @@ Participants receive energy credits for approved submissions. Buyers pay for the
 
 ## Pitch to Companies
 
+FieldMate turns resident-submitted captures into actionable insight reports that buyers can use immediately. The raw photos, videos, outlines, and notes become scored lead lists, field-review queues, and location-specific datasets that can be sold to solar companies, distribution networks, EV installers, retailers, and government teams.
+
+<table>
+  <tr>
+    <td><img src="MCP-Server-and-Assets/pitch-assets/solar-company-report.png" alt="Solar company data product report example" width="430"></td>
+    <td><img src="MCP-Server-and-Assets/pitch-assets/distribution-network-report.png" alt="Distribution network data product report example" width="430"></td>
+  </tr>
+</table>
+
 ```text
 Solar Company Data Product
 
@@ -224,6 +233,8 @@ These files were copied from `https://fieldmate-mcp-app.b-cdn.net/` into [`MCP-S
 - `single-file-app/mcp-app.html.gz`
 - `mockup-examples/00-instagram-ad.png`
 - `pitch-assets/close-data-gaps.png`
+- `pitch-assets/solar-company-report.png`
+- `pitch-assets/distribution-network-report.png`
 - `screenshots/01-demographics.png`
 - `screenshots/02-intro.png`
 - `screenshots/03-meter-section1.png`
